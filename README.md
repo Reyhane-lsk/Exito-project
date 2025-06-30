@@ -36,9 +36,9 @@
   <p>برای دیدن صفحات مختلف، یکی از لینک‌های زیر را انتخاب کنید:</p>
   <ul>
     <li><a href="EXIDO/New folder/index1.html">صفحه ۱</a></li>
-    <li><a href="EXIDO/New folder/html/index2.html">صفحه ۲</a></li>
-    <li><a href="EXIDO/Newfolder/html/index3.html">صفحه ۳</a></li>
-    <li><a href="EXIDO/Newfolder/html/index4.html">صفحه ۴</a></li>
+    <li><a href="Html/index2.html">صفحه ۲</a></li>
+    <li><a href="Html/index3.html">صفحه ۳</a></li>
+    <li><a href="Html/index4.html">صفحه ۴</a></li>
   </ul>
 </body>
 </html>
