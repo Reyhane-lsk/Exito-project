@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exito Club</title>
+    <link rel="stylesheet" href="styles1.css">
+  </head>
+  <body>
+    <div class="button" >
+        <img src="src/logo.png" alt="Exito logo">
+        <span><b>Exit club</b></span>
+    </div>
+
+    <script>
+        const button = document.querySelector('.button');
+        const img = button.querySelector('img');
+        const span = button.querySelector('span');
+
+        button.addEventListener('click', () => {
+            // اضافه کردن کلاس 'clicked'
+            button.classList.add('clicked');
+
+            // توقف انیمیشن‌های img بلافاصله (یا بعد از یک تاخیر کوتاه اگر می‌خواهید کمی ادامه پیدا کنند)
+            img.style.animation = 'none';
+
+            // صبر کردن برای اتمام transition (0.5 ثانیه) قبل از هدایت
+            setTimeout(() => {
+                // اطمینان از توقف کامل انیمیشن‌ها (اگر ترانزیشنی داشتند که بخواهید متوقف شود)
+                img.style.transition = 'none';
+                span.style.transition = 'none';
+                button.style.transition = 'none';
+
+                // هدایت به صفحه بعدی
+                window.location.href = 'http://127.0.0.1:5500/New%20folder/index2_files/index2.html'; // صفحه بعدی (یک آدرس واقعی بگذارید)
+            }, 500); // 500 میلی‌ثانیه = 0.5 ثانیه (همان مدت زمان transition)
+        });
+    </script>
+  </body>
+</html>
