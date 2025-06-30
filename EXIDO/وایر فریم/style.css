@@ -1,0 +1,148 @@
+body {
+    background-color: #1a1a1a; /* Dark background as seen in the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+    margin: 0;
+    font-family: 'Vazirmatn', sans-serif; /* Example font, choose one that fits or system font */
+    color: #fff; /* Default text color for the branding */
+    flex-direction: column; /* To stack the card and branding vertically */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px; /* Space between the card and branding */
+}
+
+.login-card {
+    background-color: #fff;
+    padding: 40px 30px; /* Adjust padding as needed */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    text-align: center;
+    width: 320px; /* Fixed width for the card, adjust as needed */
+    max-width: 90%; /* Max width for responsiveness */
+    color: #333; /* Darker text for inside the white card */
+}
+
+.card-title {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.card-description {
+    font-size: 0.95em;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.input-group {
+    text-align: right; /* Align label to the right for RTL */
+    margin-bottom: 25px;
+}
+
+.input-label {
+    display: block;
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.mobile-input-wrapper {
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden; /* Ensures inner elements respect border-radius */
+    background-color: #f9f9f9;
+}
+
+.country-code {
+    padding: 12px 15px;
+    background-color: #f0f0f0;
+    border-right: 1px solid #ddd;
+    font-size: 1.0em;
+    color: #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile-number-input {
+    flex-grow: 1; /* Takes up remaining space */
+    padding: 12px 15px;
+    border: none;
+    outline: none;
+    font-size: 1.0em;
+    text-align: right; /* Text input from right for RTL */
+    color: #333;
+    background-color: transparent; /* No background in the input itself */
+}
+
+/* Placeholder styling for better visibility in RTL */
+.mobile-number-input::placeholder {
+    color: #aaa;
+    text-align: right;
+}
+
+.continue-button {
+    background-color: #333; /* Dark button color */
+    color: #fff;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 10px; /* Slightly more rounded than the card */
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%; /* Full width of the card */
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.continue-button:hover {
+    background-color: #555; /* Slightly lighter on hover */
+}
+
+.branding {
+    color: #fff;
+    background-color: #333;
+    padding: 10px 25px;
+    border-radius: 25px; /* Pill shape */
+    font-size: 0.9em;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px; /* Space between "club" and "E" */
+    margin-top: 50px; /* Space from the bottom of the card */
+}
+
+.logo-e {
+    background-color: #fff;
+    color: #333;
+    border-radius: 50%; /* Circle shape */
+    width: 25px;
+    height: 25px;
+    display: inline-flex; /* Use flex for centering 'E' */
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+/* Basic responsiveness for smaller screens */
+@media (max-width: 400px) {
+    .login-card {
+        padding: 30px 20px;
+    }
+    .card-title {
+        font-size: 1.6em;
+    }
+    .card-description {
+        font-size: 0.9em;
+    }
+}

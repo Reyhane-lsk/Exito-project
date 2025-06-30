@@ -1,0 +1,82 @@
+@font-face {
+  font-family: ubuntu;
+  src: url("src/fonts/Ubuntu-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.button {
+  display: flex;
+
+  align-items: center;
+  background-color: #000000;
+  border: 2px solid #fff;
+  border-radius: 80px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.button img {
+  border: 2px solid #fff;
+  align-items: start;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 10px;
+  animation: blink 1.8s infinite, moveright 1.8s infinite;
+  transition: transform 10s ease;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes moveright {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(3px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.button span {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  margin-left: 10px;
+  transition: transform 0.5s ease-out, margin 0.5s ease-out;
+}
+}
+  .button.clicked {
+            flex-direction: row-reverse;
+        }
+
+        .button.clicked img {
+            margin-right: 0;
+            margin-left: 10px;
+            transition: transform 0.5s ease-out, margin 0.5s ease-out;
+        }

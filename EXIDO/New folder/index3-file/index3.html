@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)http://127.0.0.1:5500/EXIDO/New%20folder/index2.html -->
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index3.css" />
+    <title>index3
+
+    </title>
+  </head>
+  <body cz-shortcut-listen="true">
+    <div class="login-box">
+      <div class="mainLogin-box">
+        <div class="head-txt">ورود/عضویت</div>
+        <!-- <div class="sml-msg">یک کد تایید به شماره ی شما ارسال میشود</div> -->
+        <div class="form-container">
+    <div class="mobile-input-group">
+        <!-- <label for="mobileNumber">شماره موبایل</label>
+        <div class="input-wrapper">
+			 <select id="countryCode" name="countryCode">
+            <option value="+98" selected>+98</option>
+            <option value="+1"> +1</option>
+            <option value="+49"> +49</option>
+            </select>
+            <input type="tel" id="mobileNumber" name="mobileNumber"  dir="ltr">
+          
+        </div>
+        <br> -->
+         <div class="mobile-input-group">
+            <label for="verificationCode">کد تایید</label>
+            <input type="password" id="verificationCode" name="verificationCode" placeholder="******" dir="ltr"><br>
+        </div>
+          
+       <!-- عنصر جدید برای نمایش شماره موبایل -->
+        <div id="displayedMobileNumber" class="displayed-mobile-number"></div>
+
+        <button type="submit" class="send-code-button">ارسال کد تایید</button>
+
+        <a href="#" class="sml-msg">
+            ارسال مجدد کد تایید (<span id="countdown">۰۰:۵۹</span>)
+        </a>
+    </div>
+
+</div>
+      </div>
+    
+        <div class="logo-container">
+            <img src="../src/logo.png" alt="Exito Club Logo">
+             <span><b>Exit club</b></span>
+        </div>
+    </div>
+
+
+
+<!-- <script src="script3.js"></script> -->
+
+    <!-- اسکریپت جدید برای دریافت و نمایش شماره موبایل -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // ایجاد یک شی URLSearchParams برای تحلیل پارامترهای URL
+            const urlParams = new URLSearchParams(window.location.search);
+            // دریافت مقدار پارامتر 'phone'
+            const mobileNumber = urlParams.get('phone');
+            
+            // انتخاب عنصری که شماره موبایل در آن نمایش داده می‌شود
+            const displayedNumberElement = document.getElementById('displayedMobileNumber');
+
+            // اگر شماره موبایل وجود داشت، آن را نمایش بده
+            if (mobileNumber) {
+                displayedNumberElement.textContent = mobileNumber;
+                displayedNumberElement.style.display = 'flex'; // مطمئن شوید که نمایش داده می‌شود
+            } else {
+                displayedNumberElement.style.display = 'none'; // اگر شماره‌ای نبود، مخفی شود
+            }
+        });
+    </script>
+  </body>
+</html>

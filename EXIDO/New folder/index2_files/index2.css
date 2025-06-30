@@ -1,0 +1,175 @@
+@font-face {
+  font-family: ubuntu;
+  src: url("src/fonts/Ubuntu-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  text-transform: capitalize;
+}
+.login-box{
+margin: 0 auto;
+  align-items: center;
+  background-color: #ffffff;
+  cursor: pointer;
+  width:300px;
+  padding:40px;
+  height: 300px;
+position: relative;
+
+}
+.mainLogin-box{
+padding: 0 24px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+    margin-top: 30px;
+}
+.head-txt{
+    text-align: center;
+}
+.sml-msg{
+    font-size: 0.8rem;
+    color: #9b9b9b;
+    margin-top: 20px;
+
+}
+.form-container {
+    width: 300px; /* عرض کلی فرم */
+    background-color: #fff; /* پس‌زمینه سفید برای کانتینر فرم */
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* آیتم‌ها (فیلد و دکمه) زیر هم قرار بگیرند */
+    gap: 20px; /* فاصله بین فیلد ورودی و دکمه */
+}
+
+
+/* ------------------------------------- */
+/* استایل‌های مربوط به بخش شماره موبایل (مشابه قبل با تغییرات کوچک) */
+/* ------------------------------------- */
+.mobile-input-group {
+display: flex;
+    flex-direction: column; /* لیبل بالا، باکس ورودی پایین */
+}
+
+.mobile-input-group label {
+    font-size: 1em; /* کمی کوچک‌تر از قبل */
+    color: #000000;
+    margin-bottom: 0px; /* فاصله بین لیبل و باکس ورودی */
+    text-align: right; /* تراز کردن لیبل به راست */
+    padding-right: 8px; /* کمی فاصله از سمت راست */
+}
+
+.input-wrapper {
+    display: flex; /* استفاده از Flexbox برای کنار هم قرار دادن +98 و input */
+    border-bottom: 1px solid #000000; /* فقط خط زیرین! */
+     /* width: 350px */
+     height:30px ;
+}
+/* select{
+    padding-left: 20px;
+} */
+
+#countryCode {
+    background-color: transparent; /* پس‌زمینه حذف شده */
+    color: #000000;
+    display: flex;
+    align-items: center;
+    border-right: 0.8px solid #000000; /* خط جداکننده بین +98 و input */
+   border-bottom: #000000;
+    padding-right: 7px;
+    padding-left:7px ;
+    direction: ltr;
+     box-sizing: border-box;
+     font-size: 15px;
+}
+
+.input-wrapper input[type="tel"] {
+    flex-grow: 1;
+    border: none; /* حذف بوردر پیش‌فرض input */
+    padding: 2px 15px; /* پدینگ داخل فیلد input */
+   
+    color: #4a4a4a;
+    outline: none; /* حذف خط آبی دور فیلد هنگام فوکوس */
+    text-align: left; /* تراز کردن متن ورودی به چپ */
+    width: 100%;
+}
+
+/* استایل برای زمانی که فیلد input فعال (focused) می‌شود */
+.input-wrapper input[type="tel"]:focus {
+    /* box-shadow: 0 0 0 2px rgba(33, 150, 243, 0.5); */ /* می‌توانید این را برای یک فوکوس نامرئی حذف کنید */
+    border-color: #6200EE; /* یا هر رنگ دیگری برای تاکید فوکوس */
+}
+
+/* ------------------------------------- */
+/* استایل‌های مربوط به دکمه ادامه */
+/* ------------------------------------- */
+.continue-button {
+    width: 100%; /* دکمه تمام عرض کانتینر را اشغال کند */
+    padding: 12px 20px;
+    background-color: #000000; /* رنگ مشکی */
+    color: white; /* متن سفید */
+    border: none;
+    border-radius: 5px; /* گوشه‌های گرد */
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* انیمیشن برای تغییر رنگ هنگام هاور */
+    height: 40px;
+     display: flex;
+      align-items: center;
+      justify-content: center;
+
+}
+.continue-button p{
+    vertical-align:middle;
+}
+
+.continue-button:hover {
+    background-color: #333333; /* رنگ کمی روشن‌تر هنگام هاور */
+}
+
+#countryCode{
+   
+    /* border-right: 2px solid #000; */
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+
+}
+.logo-container{
+     position: absolute;
+     bottom:-90px;
+     left:115px;
+    display: flex;
+  align-items:center;
+  border: 2px solid #fff;
+  border-radius: 80px;
+  padding: 10px 10px;
+  color: #ffffff;
+  width: 120px;
+  height: 20px;
+
+
+
+}
+.logo-container img{
+    border: 1px solid #fff;
+  align-items: start;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
