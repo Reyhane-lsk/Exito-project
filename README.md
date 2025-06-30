@@ -35,7 +35,7 @@
   <h1>به پروژه Exito خوش آمدید</h1>
   <p>برای دیدن صفحات مختلف، یکی از لینک‌های زیر را انتخاب کنید:</p>
   <ul>
-    <li><a href="EXIDO/Newfolder/html/index1.html">صفحه ۱</a></li>
+    <li><a href="EXIDO/Newfolder/index1.html">صفحه ۱</a></li>
     <li><a href="EXIDO/Newfolder/html/index2.html">صفحه ۲</a></li>
     <li><a href="EXIDO/Newfolder/html/index3.html">صفحه ۳</a></li>
     <li><a href="EXIDO/Newfolder/html/index4.html">صفحه ۴</a></li>
